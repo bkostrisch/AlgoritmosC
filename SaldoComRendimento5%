@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+	float saldo,total;
+	printf("Digite o saldo:\n");
+	scanf("%f", &saldo);
+	total = saldo+(saldo*5/100);
+	system("cls");
+	printf("O saldo mais o rendimento em 5%% %c: %f", 130, total);
+	return(0);
+}
