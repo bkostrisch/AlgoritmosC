@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+	int a, b, c;
+	printf("Digite o 1%c n%cmero:\n",248,163);
+	scanf("%d", &a);
+	printf("Digite o 2%c n%cmero:\n",248,163);
+	scanf("%d", &b);
+	printf("Digite o 3%c n%cmero:\n",248,163);
+	scanf("%d", &c);	
+	system("cls");	
+	if(a<b+c && b<a+c && c<a+b){
+		
+		if(a == b && b == c){
+			printf("Equil%ctero.",160);
+		}
+			else if ((a == b && a != c)||(b == c && b != a)){
+				printf("Is%csceles.",162);
+			}
+				else if (a != b && a != c && b != c){
+					printf("Escaleno.");
+				}
+	}
+	else{
+		printf("N%co %c poss%cvel formar um tri%cngulo com estes n%cmeros.", 198,130,161,131,163);
+	}
+	return 0;
+}
