@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main() {
+	int cnt=0, tam, i;
+	char nome[50];
+	printf("Digite um nome:\n");
+	gets(nome);
+	tam=strlen(nome) ;
+	system("cls");
+	printf("As letras em posi%c%co %cmpar s%co:",135,198,161,198);
+	while(cnt<=tam-1){
+		printf("\n[%d]= %c",cnt+1,nome[cnt]);
+		cnt=cnt+2;
+	}
+	return 0;
+}
