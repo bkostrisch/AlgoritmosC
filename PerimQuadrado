@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	int l, p;
+	printf("Digite o tamanho do lado:\n");
+	scanf("%d", &l);	
+	system("cls");
+	
+	p=l*l;
+	
+	printf("O per%cmetro do quadrado %c: %d", 161, 130, p);
+	return 0;
+	
+}
