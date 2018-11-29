@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int aB, h, v;
+	printf("Digite a %crea da base:\n", 160);
+	scanf("%d", &aB);
+	printf("Digite a altura:\n");
+	scanf("%d", &h);
+	system("cls");
+	v=aB*h;
+	
+	printf("O volume do c%clindo %c: %d", 161, 130, v);
+	return 0;
+}
+_
