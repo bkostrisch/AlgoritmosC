@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+	char nome[15], snome[50];
+	printf("Digite seu nome:\n");
+	scanf("%[^\n]s", nome);
+	setbuf(stdin, NULL);
+	printf("Digite seu sobrenome:\n");
+	scanf("%[^\n]s", snome);
+	strcat(nome, snome);
+	printf("nome = %s\n", nome);	
+	
+	return 0;
+}
