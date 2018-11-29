@@ -1,0 +1,94 @@
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+char estado[20];
+printf(&quot;Digite o estado:\n(sem acentos)\n&quot;);
+scanf(&quot;%[^\n]s&quot;, &amp;estado);
+system(&quot;cls&quot;);
+if(strcmp(strlwr(estado), &quot;acre&quot;)== 0 ){
+
+printf(&quot;AC&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;amapa&quot;)== 0 ){
+printf(&quot;AP&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;amazonas&quot;)== 0 ){
+printf(&quot;AM&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;bahia&quot;)== 0 ){
+printf(&quot;BA&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;ceara&quot;)== 0 ){
+printf(&quot;CE&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;distrito federal&quot;)== 0 ){
+printf(&quot;DF&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;espirito santo&quot;)== 0 ){
+printf(&quot;ES&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;goias&quot;)== 0 ){
+printf(&quot;GO&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;maranhao&quot;)== 0 ){
+printf(&quot;MA&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;mato grosso&quot;)== 0 ){
+printf(&quot;MT&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;mato grosso do sul&quot;)== 0 ){
+printf(&quot;MS&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;minas gerais&quot;)== 0 ){
+printf(&quot;MG&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;para&quot;)== 0 ){
+printf(&quot;PA&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;paraiba&quot;)== 0 ){
+printf(&quot;PB&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;parana&quot;)== 0 ){
+printf(&quot;PR&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;pernambuco&quot;)== 0 ){
+printf(&quot;PE&quot;);
+}
+
+else if(strcmp(strlwr(estado), &quot;piaui&quot;)== 0 ){
+printf(&quot;PI&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;rio de janeiro&quot;)== 0 ){
+printf(&quot;RJ&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;rio grande do norte&quot;)== 0 ){
+printf(&quot;RN&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;rio grande do sul&quot;)== 0 ){
+printf(&quot;RS&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;rondonia&quot;)== 0 ){
+printf(&quot;RO&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;roraima&quot;)== 0 ){
+printf(&quot;RR&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;santa catarina&quot;)== 0 ){
+printf(&quot;SC&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;sao paulo&quot;)== 0 ){
+printf(&quot;SP&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;sergipe&quot;)== 0 ){
+printf(&quot;SE&quot;);
+}
+else if(strcmp(strlwr(estado), &quot;tocantis&quot;)== 0 ){
+printf(&quot;TO&quot;);
+}
+else {
+printf(&quot;Estado n%co encontrado!&quot;, 198);
+}
+return 0;
+}
