@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int letras(char l){
+
+	if(l=='a'||l=='e'||l=='i'||l=='o'||l=='u'){
+		return(1);
+	}
+	else {
+		return(0);
+	}
+}
+int main() {
+	char x;
+	printf("Digite uma letra:\n");
+	scanf("%c", &x);
+	system("cls");
+	if(letras(x)==1){
+		printf("Vogal.");
+	}
+	else{
+		printf("Consoante.");
+	}
+	return(0);
+}
