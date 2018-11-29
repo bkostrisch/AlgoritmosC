@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int ALG(float a, float b, float c){
+	int result;
+	
+	result=(2*a)+b-c;
+	return result;
+}
+
+int main() {
+	float n1,n2,n3;
+	printf("Digite um n%cmero:\n", 163);
+	scanf("%f", &n1);
+	printf("Digite um n%cmero:\n", 163);
+	scanf("%f", &n2);
+	printf("Digite um n%cmero:\n", 163);
+	scanf("%f", &n3);
+	system("cls");
+	printf("O resultado %c: %d", 130, ALG(n1,n2,n3));
+	return 0;
+}
