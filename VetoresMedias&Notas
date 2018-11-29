@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int i,media, nota[3];
+	for(i=0;i<3;i++){
+		printf("Digite a %d%c nota:\n", i+1,166);
+		scanf("%d",&nota[i]);
+	}
+	system("cls");
+	media=(nota[0]+nota[1]+nota[2])/3;
+	printf("A m%cdia %c: %d",130,130,media);
+	
+	if(nota[0]<media){
+		printf("\nA primeira nota %c menor que a m%cdia.",130,130);
+	}
+	if(nota[1]<media){
+		printf("\nA segunda nota %c menor que a m%cdia.",130,130);
+	}
+	if(nota[2]<media){
+		printf("\nA terceira nota %c menor que a m%cdia.",130,130);
+	}
+	return 0;
+}
+__
