@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int matriz[2][2],i,j,p,n,c1=0,c2=0;
+	for(i=0;i<2;i++){
+		for(j=0;j<2;j++){
+			printf("Digite o n%cmero da matriz:\n",163);
+			scanf("%d", &matriz[i][j]);
+			
+			if(matriz[i][j]>=0){
+				p=p+matriz[i][j];				
+				c1++;
+			}
+			else{
+				n=n+matriz[i][j];
+				c2++;
+			}
+		}
+	}
+	system("cls");	
+	printf("\nA soma dos n%cmeros positivos %c: %d",163,130,p);
+	printf("\nA soma dos n%cmeros negativos %c: %d",163,130,n);
+	printf("\nExistem %d n%cmeros positivos.",c1, 163);
+	printf("\nExistem %d n%cmeros negativos.",c2, 163);	
+}
