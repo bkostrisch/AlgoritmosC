@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	float r,a,pi=3.14;
+	printf("Digite o tamanho do raio da circunfer%cncia:\n",136);
+	scanf("%f", &r);
+	a = pi*r*r ;
+	system("cls");
+	printf("A %crea da circunfer%cncia %c: %f",160,136, 130, a);
+	return(0);
+}
