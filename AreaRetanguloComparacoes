@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int b, h, aR;
+	printf("Informe a base do ret%cngulo:\n", 131);
+	scanf("%d", &b);
+	printf("Informe a altura do ret%cngulo:\n", 131);
+	scanf("%d", &h);
+	
+	aR=b*h;	
+	
+	system("cls");
+	if(b > h)
+	{
+		printf("A %crea do ret%cngulo %c: %d", 160, 131, 130, aR);
+		printf("\nA base %c maior que a altura.", 130);
+	}
+	else if (h > b)
+	{
+		printf("A %crea do ret%cngulo %c: %d", 160, 131, 130, aR);
+		printf("\nA altura %c maior que a base.", 130);	
+	}
+	else
+	{
+		printf("A %crea do ret%cngulo %c: %d", 160, 131, 130, aR);
+		printf("\nA altura e a base s%co iguais.", 198);	
+	}
+	return 0;
+	
+}
