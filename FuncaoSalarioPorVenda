@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+float Stotal(float salario,float carros){
+
+	float com, salariototal;
+	com = 0.05*(carros*100);
+	salariototal = salario+(carros*100)+com;
+	
+	return(salariototal); 
+	
+}
+
+int main() {
+	int carros;
+	float total, sal=1800;
+	printf ("Quantos carros foram vendidos?\n");
+	scanf("%d", &carros);
+	
+	total=Stotal(sal,carros);
+	printf("%.2f", total);	
+	
+	return 0;
+}
