@@ -1,0 +1,18 @@
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+
+int main() {
+
+char nome[20];
+printf(&quot;Digite um nome de até 20 caracteres:\n(sem acentos)\n&quot;);
+scanf(&quot;%[^\n]s&quot;, &amp;nome);
+system(&quot;cls&quot;);
+if(strlen(nome)&lt;= 20 ){
+printf(&quot;Cadastrado!&quot;);
+}
+else if(strlen(nome)&gt; 20 ){
+printf(&quot;Mais de 20 caracteres\nN%co pode ser cadastrado.&quot;,198);
+}
+return 0;
+}
