@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	int n;
+	printf("Digite um n%cmero:\n", 163);
+	scanf("%d", &n);
+	system("cls");
+	if(n%5 == 0 && n%3 == 0)
+	{
+		printf("O n%cmero %c divi%cvel por 5 e por 3 ao mesmo tempo!", 163, 130, 161);
+	}
+	else if (n%5 == 0 && n%3 != 0)
+	{
+		printf("O n%cmero n%co %c divis%cvel por 5 e por 3 ao mesmo tempo, mas %c divis%cvel por 5.", 163, 198, 130, 161, 130, 161 );	
+	}
+	else if (n%5 != 0 && n%3 == 0)
+	{
+		printf("O n%cmero n%co %c divis%cvel por 5 e por 3 ao mesmo tempo, mas %c divis%cvel por 3.", 163, 198, 130, 161, 130, 161);
+	}
+	else
+	{
+		printf("O n%cmero n%co %c divis%cvel por 5 e nem por 3.", 163, 198, 130, 161);	
+	}	
+	return 0;
+}
