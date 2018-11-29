@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int vogais(char v[5]){
+	
+	if(v=='a'||v=='e'||v=='i'||v=='o'||v=='u'){
+		return (1);
+	}
+	else {
+		return(0);
+	}
+}
+
+int main() {
+	int cnt=0, tam, i;
+	char nome[50];
+	printf("Digite um nome:\n");
+	gets(nome);
+	tam=strlen(nome) ;
+	system("cls");
+	for(i=0;i<=tam;i++){
+		if(vogais(nome[i])==1){
+				
+		cnt++;
+		}	
+	}
+	printf("Existem %d vogais.", cnt);
+	
+	return 0;
+}
