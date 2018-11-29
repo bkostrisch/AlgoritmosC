@@ -1,0 +1,44 @@
+ //Tabela base: http://prntscr.com/looe1d
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main() {
+	int cod=0;
+	float prod=0;
+	printf("Digite o c%cdigo de origem:\n",162);
+	scanf("%d", &cod);
+	printf("Digite o pre%co do produto:\n",135);
+	scanf("%f", &prod);
+	system("cls");
+	if(cod == 1){
+		printf("Pre%co: %.2f\nOrigem: Sul.",135,prod);
+	}
+		else if(cod == 2){
+			printf("Pre%co: %.2f\nOrigem: Norte.",135,prod);
+		}
+			else if(cod == 3){
+				printf("Pre%co: %.2f\nOrigem: Leste.",135,prod);
+			}
+				else if(cod == 4){
+					printf("Pre%co: %.2f\nOrigem: Oeste.",135,prod);
+				}
+					else if(cod == 5 || cod ==6){
+						printf("Pre%co: %.2f\nOrigem: Nordeste.",135,prod);
+					}
+						else if (cod >=7 && cod <=9){
+							printf("Pre%co: %.2f\nOrigem: Sudeste.",135,prod);
+						}
+							else if(cod >=10 && cod <=20){
+								printf("Pre%co: %.2f\nOrigem: Centro-Oeste.",135,prod);
+							}
+								else{
+									printf("Produto Importado.");
+								}
+	
+	return 0;
+  
+  
+ 
