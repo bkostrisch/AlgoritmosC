@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Aluna: Bárbara Hedwig von Kostrisch Corrêa de Oliveira  Turma: CCO 2MA RE - FG BOA VISTA
+
+int main() {
+	int num;
+	printf("Digite um n%cmero: \n",	163);
+	scanf("%d", &num);
+	system("cls");
+	if(num%2 == 0){
+		printf("O n%cmero %c par.", 163, 130);
+	}
+	else{
+		printf("O n%cmero %c %cmpar.", 163, 130, 161);
+	}	
+	return 0;
+}
